@@ -1,0 +1,855 @@
+@font-face {
+  font-family: 'KaushanScript';
+  src: url(../font/KaushanScript-Regular.ttf);
+}
+
+/* line 1, ../foxmind/js/Task_2.8/scss/_index.scss */
+body {
+  position: relative;
+  color: #112942;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* line 7, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100px;
+  color: white;
+  padding: 0 15rem;
+}
+
+@media (max-width: 1600px) {
+  /* line 7, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .header {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 7, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .header {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 7, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .header {
+    padding-top: 1rem;
+  }
+}
+
+/* line 23, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .nav-index {
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  /* line 23, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .header .nav-index {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 23, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .header .nav-index {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* line 33, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .nav-index a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+  font-size: 20px;
+}
+
+/* line 38, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .nav-index a:visited {
+  color: white;
+}
+
+/* line 43, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .logo-index {
+  text-decoration: none;
+  color: white;
+  font-family: KaushanScript;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* line 50, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .cart-index {
+  border: transparent;
+  background: transparent;
+  color: white;
+  position: relative;
+}
+
+/* line 55, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .cart-index:hover {
+  cursor: pointer;
+}
+
+/* line 58, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .cart-index img {
+  width: 25px;
+}
+
+/* line 61, ../foxmind/js/Task_2.8/scss/_index.scss */
+.header .cart-index .number-of-items {
+  position: absolute;
+  top: -17px;
+  right: -1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 25px;
+  color: white;
+  background-color: brown;
+  font-size: 13px;
+}
+
+/* line 75, ../foxmind/js/Task_2.8/scss/_index.scss */
+.cart-container {
+  text-align: end;
+}
+
+/* line 79, ../foxmind/js/Task_2.8/scss/_index.scss */
+.background-img {
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  height: 60vh;
+  background-image: url(../img/cozy-autumn-composition-with-big-cup-coffee-bed.jpg);
+  filter: blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1600px) {
+  /* line 79, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .background-img {
+    height: 70vh;
+  }
+}
+
+/* line 94, ../foxmind/js/Task_2.8/scss/_index.scss */
+.title-index {
+  color: white;
+  margin: 9rem 0;
+  padding: 0 15rem;
+}
+
+@media (max-width: 1200px) {
+  /* line 94, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .title-index {
+    padding: 0 2rem;
+  }
+}
+
+/* line 101, ../foxmind/js/Task_2.8/scss/_index.scss */
+.title-index h1 {
+  font-family: KaushanScript;
+  font-size: 4em;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  /* line 101, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .title-index h1 {
+    font-size: 3em;
+  }
+}
+
+/* line 109, ../foxmind/js/Task_2.8/scss/_index.scss */
+.title-index p {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  /* line 109, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .title-index p {
+    font-size: 1.5em;
+  }
+}
+
+/* line 116, ../foxmind/js/Task_2.8/scss/_index.scss */
+.title-index button {
+  text-transform: uppercase;
+  border: white 1px solid;
+  color: white;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 14px;
+  width: 100px;
+  height: 25px;
+}
+
+/* line 125, ../foxmind/js/Task_2.8/scss/_index.scss */
+.title-index button:hover {
+  cursor: pointer;
+  color: brown;
+  background-color: white;
+}
+
+/* line 133, ../foxmind/js/Task_2.8/scss/_index.scss */
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-height: 1000px) {
+  /* line 133, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .featured {
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 133, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .featured {
+    margin-top: 11rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 133, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .featured {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 450px) {
+  /* line 133, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .featured {
+    margin-top: 0;
+  }
+}
+
+/* line 152, ../foxmind/js/Task_2.8/scss/_index.scss */
+.featured h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* line 155, ../foxmind/js/Task_2.8/scss/_index.scss */
+.featured h3::before {
+  content: "/";
+  color: brown;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+/* line 162, ../foxmind/js/Task_2.8/scss/_index.scss */
+.featured .featured-cards {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  /* line 162, ../foxmind/js/Task_2.8/scss/_index.scss */
+  .featured .featured-cards {
+    flex-direction: column;
+  }
+}
+
+/* line 170, ../foxmind/js/Task_2.8/scss/_index.scss */
+.featured .all-products button {
+  border: transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background: brown;
+  color: white;
+  width: 130px;
+  height: 30px;
+}
+
+/* line 180, ../foxmind/js/Task_2.8/scss/_index.scss */
+.featured .all-products button:hover {
+  cursor: pointer;
+  color: brown;
+  background: white;
+  border: brown 1px solid;
+}
+
+/* line 1, ../foxmind/js/Task_2.8/scss/_products.scss */
+.nav-black {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  /* line 1, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .nav-black {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 1, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .nav-black {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* line 14, ../foxmind/js/Task_2.8/scss/_products.scss */
+.nav-black a {
+  text-decoration: none;
+  color: #112942;
+  margin: 0 1rem;
+  font-size: 20px;
+}
+
+/* line 19, ../foxmind/js/Task_2.8/scss/_products.scss */
+.nav-black a:visited {
+  color: #112942;
+}
+
+/* line 25, ../foxmind/js/Task_2.8/scss/_products.scss */
+.logo-black {
+  text-decoration: none;
+  color: #112942;
+  font-family: KaushanScript;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* line 33, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-black {
+  border: transparent;
+  background: transparent;
+  color: #112942;
+  position: relative;
+}
+
+/* line 38, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-black:hover {
+  cursor: pointer;
+}
+
+/* line 41, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-black img {
+  width: 25px;
+}
+
+/* line 44, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-black .number-of-items {
+  position: absolute;
+  top: -17px;
+  right: -1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 25px;
+  color: white;
+  background-color: brown;
+  font-size: 13px;
+}
+
+/* line 57, ../foxmind/js/Task_2.8/scss/_products.scss */
+.title {
+  color: #617d98;
+  background: #f1f5f8;
+  padding: 3rem 15rem;
+}
+
+@media (max-width: 1600px) {
+  /* line 57, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .title {
+    padding: 3rem 10rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 57, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .title {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 57, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .title {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* line 73, ../foxmind/js/Task_2.8/scss/_products.scss */
+.product-cards {
+  display: flex;
+  padding: 0 15rem;
+  margin-top: 3rem;
+  flex-direction: row;
+}
+
+@media (max-width: 1600px) {
+  /* line 73, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .product-cards {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 73, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .product-cards {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 73, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .product-cards {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+/* line 88, ../foxmind/js/Task_2.8/scss/_products.scss */
+.product-cards .filter {
+  width: 10rem;
+  margin-right: 3rem;
+}
+
+@media (max-width: 720px) {
+  /* line 88, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .product-cards .filter {
+    width: auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 95, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .product-cards .filter form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* line 103, ../foxmind/js/Task_2.8/scss/_products.scss */
+.product-cards .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  /* line 103, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .product-cards .cards {
+    gap: 10px;
+  }
+}
+
+/* line 115, ../foxmind/js/Task_2.8/scss/_products.scss */
+.card {
+  width: 20rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 1600px) {
+  /* line 115, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 115, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 115, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card {
+    width: 8rem;
+    height: 10rem;
+  }
+}
+
+/* line 133, ../foxmind/js/Task_2.8/scss/_products.scss */
+.card img {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media (max-width: 1600px) {
+  /* line 133, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card img {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 133, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card img {
+    width: 12rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 133, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card img {
+    width: 8rem;
+    height: 5rem;
+  }
+}
+
+/* line 150, ../foxmind/js/Task_2.8/scss/_products.scss */
+.card .add-cart {
+  border: transparent;
+  background: transparent;
+  position: absolute;
+  top: 250px;
+  right: 105px;
+}
+
+@media (max-width: 1600px) {
+  /* line 150, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card .add-cart {
+    right: 75px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 150, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .card .add-cart {
+    top: 170px;
+    right: 45px;
+  }
+}
+
+/* line 163, ../foxmind/js/Task_2.8/scss/_products.scss */
+.card .add-cart:hover {
+  cursor: pointer;
+}
+
+/* line 167, ../foxmind/js/Task_2.8/scss/_products.scss */
+.card .card-name {
+  color: #617d98;
+}
+
+/* line 170, ../foxmind/js/Task_2.8/scss/_products.scss */
+.card .card-price {
+  font-weight: 700;
+}
+
+/* line 175, ../foxmind/js/Task_2.8/scss/_products.scss */
+.search-container {
+  position: relative;
+}
+
+/* line 177, ../foxmind/js/Task_2.8/scss/_products.scss */
+.search-container .search-input {
+  border-radius: 5px;
+  border: transparent;
+  background: #f1f5f8;
+  width: 10rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+}
+
+/* line 185, ../foxmind/js/Task_2.8/scss/_products.scss */
+.search-container i {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+
+/* line 189, ../foxmind/js/Task_2.8/scss/_products.scss */
+.search-container i:hover {
+  cursor: pointer;
+}
+
+/* line 195, ../foxmind/js/Task_2.8/scss/_products.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* line 202, ../foxmind/js/Task_2.8/scss/_products.scss */
+.filter-company {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+/* line 205, ../foxmind/js/Task_2.8/scss/_products.scss */
+.filter-company::before {
+  content: attr(aria-label);
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* line 210, ../foxmind/js/Task_2.8/scss/_products.scss */
+.filter-company li {
+  margin: 1rem 5px;
+  color: #617d98;
+}
+
+/* line 213, ../foxmind/js/Task_2.8/scss/_products.scss */
+.filter-company li:hover {
+  cursor: pointer;
+}
+
+/* line 217, ../foxmind/js/Task_2.8/scss/_products.scss */
+.filter-company .active {
+  color: #112942;
+}
+
+/* line 223, ../foxmind/js/Task_2.8/scss/_products.scss */
+.price-range {
+  margin-top: 2rem;
+}
+
+@media (max-width: 720px) {
+  /* line 223, ../foxmind/js/Task_2.8/scss/_products.scss */
+  .price-range {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* line 229, ../foxmind/js/Task_2.8/scss/_products.scss */
+.price-range label {
+  font-weight: bold;
+}
+
+/* line 232, ../foxmind/js/Task_2.8/scss/_products.scss */
+.price-range output {
+  color: #617d98;
+}
+
+/* line 237, ../foxmind/js/Task_2.8/scss/_products.scss */
+.dollar::before {
+  content: '$';
+}
+
+/* line 241, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 25rem;
+  background: #f1f5f8;
+}
+
+/* line 248, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-section button {
+  background: transparent;
+  border: transparent;
+}
+
+/* line 251, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-section button:hover {
+  cursor: pointer;
+}
+
+/* line 256, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-section .close img {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 261, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-section h2,
+.cart-section .total {
+  font-family: KaushanScript;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* line 268, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-section .cart-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+/* line 277, ../foxmind/js/Task_2.8/scss/_products.scss */
+.cart-section .cart-footer button {
+  background: brown;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* line 289, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item {
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  padding-left: 1rem;
+}
+
+/* line 294, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item img {
+  width: 5rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* line 300, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 303, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item .info-name {
+  font-size: 18px;
+}
+
+/* line 306, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item .info-price {
+  font-size: 14px;
+}
+
+/* line 309, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item .info-remove {
+  font-size: 14px;
+  margin-top: 10px;
+  color: gray;
+}
+
+/* line 313, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item .info-remove:hover {
+  cursor: pointer;
+}
+
+/* line 319, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item .amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 323, ../foxmind/js/Task_2.8/scss/_products.scss */
+.item .amount button {
+  color: brown;
+}
+
+/* line 330, ../foxmind/js/Task_2.8/scss/_products.scss */
+.hidden {
+  display: none;
+}
+
+/* line 335, ../foxmind/js/Task_2.8/scss/_products.scss */
+.darken::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100rem;
+  right: 25rem;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* line 1, ../foxmind/js/Task_2.8/scss/_about.scss */
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+@media (max-width: 800px) {
+  /* line 1, ../foxmind/js/Task_2.8/scss/_about.scss */
+  .history {
+    margin-top: 1rem;
+  }
+}
+
+/* line 10, ../foxmind/js/Task_2.8/scss/_about.scss */
+.history h1 {
+  color: #112942;
+}
+
+/* line 12, ../foxmind/js/Task_2.8/scss/_about.scss */
+.history h1::before {
+  content: "/";
+  color: brown;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+/* line 19, ../foxmind/js/Task_2.8/scss/_about.scss */
+.history p {
+  padding: 0 30rem;
+  line-height: 2rem;
+  color: #617d98;
+}
+
+@media (max-width: 1600px) {
+  /* line 19, ../foxmind/js/Task_2.8/scss/_about.scss */
+  .history p {
+    padding: 0 15rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 19, ../foxmind/js/Task_2.8/scss/_about.scss */
+  .history p {
+    padding: 0 10rem;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 19, ../foxmind/js/Task_2.8/scss/_about.scss */
+  .history p {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 19, ../foxmind/js/Task_2.8/scss/_about.scss */
+  .history p {
+    padding: 0 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

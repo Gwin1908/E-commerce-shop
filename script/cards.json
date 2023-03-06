@@ -1,0 +1,98 @@
+[
+    {
+        "productName": "High-Back Bench",
+        "price": 9.99,
+        "photo": "img/furniture/bench-with-back.jpeg",
+        "company": "Ikea",
+        "featured": 1,
+        "id": "p01"
+    },
+    {
+        "productName": "Albany Table",
+        "price": 79.99,
+        "photo": "img/furniture/Albany-T.jpg",
+        "company": "Marcos",
+        "featured": 1,
+        "id": "p02"
+    },
+    {
+        "productName": "Accent Chair",
+        "price": 25.99,
+        "photo": "img/furniture/accent_chair.jpg",
+        "company": "Caressa",
+        "featured": 1,
+        "id": "p03"
+    },
+    {
+        "productName": "Wooden Table",
+        "price": 45.99,
+        "photo": "img/furniture/wooden-table.jpg",
+        "company": "Liddy",
+        "featured": 0,
+        "id": "p04"
+    },
+    {
+        "productName": "Dining Table",
+        "price": 6.99,
+        "photo": "img/furniture/dining-table.jpg",
+        "company": "Ikea",
+        "featured": 0,
+        "id": "p05"
+    },
+    {
+        "productName": "Sofa Set",
+        "price": 69.99,
+        "photo": "img/furniture/sofa-set.jpg",
+        "company": "Marcos",
+        "featured": 0,
+        "id": "p06"
+    },
+    {
+        "productName": "Modern Bookshelf",
+        "price": 8.99,
+        "photo": "img/furniture/modern-bookshelf.jpg",
+        "company": "Caressa",
+        "featured": 0,
+        "id": "p07"
+    },
+    {
+        "productName": "Emperor Bed",
+        "price": 21.99,
+        "photo": "img/furniture/emperor-bed.png",
+        "company": "Liddy",
+        "featured": 0,
+        "id": "p08"
+    },
+    {
+        "productName": "Utopia Sofa",
+        "price": 39.95,
+        "photo": "img/furniture/utopia-sofa.jpg",
+        "company": "Ikea",
+        "featured": 0,
+        "id": "p09"
+    },
+    {
+        "productName": "Entertainment Center",
+        "price": 29.98,
+        "photo": "img/furniture/entertaintment-center.jpg",
+        "company": "Marcos",
+        "featured": 0,
+        "id": "p10"
+    },
+    {
+        "productName": "Albany Sectional",
+        "price": 10.99,
+        "photo": "img/furniture/albany_sectional.jpg",
+        "company": "Caressa",
+        "featured": 0,
+        "id": "p11"
+    },
+    {
+        "productName": "Leather Sofa",
+        "price": 9.99,
+        "photo": "img/furniture/leather-sofa.jpg",
+        "company": "Liddy",
+        "featured": 0,
+        "id": "p12"
+    }
+]

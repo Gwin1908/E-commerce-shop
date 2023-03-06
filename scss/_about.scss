@@ -1,0 +1,36 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    @media (max-width: 800px) {
+        margin-top: 1rem;
+    }
+    h1 {
+        color: rgb(17, 41, 66);
+        &::before {
+            content: "/";
+            color: brown;
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+    }
+    p {
+        padding: 0 30rem;
+        line-height: 2rem;
+        color: rgb(97, 125, 152);
+        @media (max-width: 1600px) {
+            padding: 0 15rem;
+        }
+        @media (max-width: 1200px) {
+            padding: 0 10rem;
+        }
+        @media (max-width: 800px) {
+            padding: 0 5rem;
+        }
+        @media (max-width: 500px) {
+            padding: 0 2rem;
+        }
+    }
+}

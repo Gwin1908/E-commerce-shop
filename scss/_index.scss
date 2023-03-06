@@ -1,0 +1,188 @@
+body {
+    position: relative;
+    color: rgb(17, 41, 66);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100px;
+    color: white;
+    padding: 0 15rem;
+    @media (max-width: 1600px) {
+        padding: 0 5rem;
+    }
+    @media (max-width: 1200px) {
+        padding: 0 2rem;
+    }
+    @media (max-width: 600px) {
+        padding-top: 1rem
+    }
+    .nav-index {
+        font-weight: 500;
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: row;
+        }
+        @media (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 0 1rem;
+            font-size: 20px;
+            &:visited {
+                color: white;
+            }
+        }
+    }
+    .logo-index {
+        text-decoration: none;
+        color: white;
+        font-family: KaushanScript;
+        font-size: 35px;
+        text-align: center;
+    }
+    .cart-index {
+        border: transparent;
+        background: transparent;
+        color: white;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+        img {
+            width: 25px;
+        }
+        .number-of-items {
+            position: absolute;
+            top: -17px;
+            right: -1px;
+            width: 16px;
+            height: 16px;
+            border-radius: 25px;
+            color: white;
+            background-color: brown;
+            font-size: 13px;
+        }
+    }
+}
+
+.cart-container {
+    text-align: end;
+}
+
+.background-img {
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    height: 60vh;
+    background-image: url(../img/cozy-autumn-composition-with-big-cup-coffee-bed.jpg);
+    filter: blur(3px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        @media (max-width: 1600px) {
+        height: 70vh;
+    }
+}
+
+.title-index {
+    color: white;
+    margin: 9rem 0;
+    padding: 0 15rem;
+    @media (max-width: 1200px) {
+        padding: 0 2rem;
+    }
+    h1 {
+        font-family: KaushanScript;
+        font-size: 4em;
+        margin: 1rem 0;
+        @media (max-width: 600px) {
+            font-size: 3em;
+        }
+    }
+    p {
+        font-size: 2rem;
+        margin: 1rem 0;
+        @media (max-width: 600px) {
+            font-size: 1.5em;
+        }
+    }
+    button {
+        text-transform: uppercase;
+        border: white 1px solid;
+        color: white;
+        border-radius: 3px;
+        background: transparent;
+        font-size: 14px;
+        width: 100px;
+        height: 25px;
+        &:hover {
+            cursor: pointer;
+            color: brown;
+            background-color: white;
+        }
+    }
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 17rem;   
+    margin-bottom: 3rem; 
+    @media (min-height: 1000px) {
+        margin-top: 20rem;
+    }
+    @media (max-width: 1000px) {
+        margin-top: 11rem;
+    }
+    @media (max-width: 600px) {
+        margin-top: 0rem;
+    }
+    @media (max-width: 450px) {
+        margin-top: 0;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        &::before {
+            content: "/";
+            color: brown;
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+    }
+    .featured-cards {
+        display: flex;
+        gap: 20px;
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
+    }
+    .all-products {
+        button {
+            border: transparent;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            background: brown;
+            color: white;
+            width: 130px;
+            height: 30px;
+            &:hover {
+                cursor: pointer;
+                color: brown;
+                background: white;
+                border: brown 1px solid;
+            }
+        }
+    }
+}
