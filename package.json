@@ -1,0 +1,15 @@
+{
+  "name": "task_2.8",
+  "version": "1.0.0",
+  "description": "js_final_task",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files '*.*'"  
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+		"browser-sync": "2.27.10"
+	}
+}

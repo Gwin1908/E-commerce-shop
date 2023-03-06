@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="https://kit.fontawesome.com/a090093f4c.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="./script/script.js"></script>
+    <title>Products</title>
+</head>
+<body class="products">
+    <header class="header">
+        <nav class="nav-black">
+            <a href="./index.html">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./about.html">About</a>
+        </nav>
+        <a class="logo-black" href="./index.html">comfy</a>
+        <div class="cart-container">
+            <button class="cart-black cart-icon">
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                <span class="number-of-items"></span>
+            </button>
+        </div>
+    </header>
+    <div class="title">
+        <h1>Home / Products</h1>
+    </div>
+    <section class="product-cards">
+        <aside class="filter">
+            <form class="form">
+                <div class="search-container">
+                    <input class="search-input" type="search" placeholder="Search...">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <ul class="filter-company" aria-label="Company">
+                    <li class="company">All</li>
+                    <li class="company">Ikea</li>
+                    <li class="company">Marcos</li>
+                    <li class="company">Caressa</li>
+                    <li class="company">Liddy</li>
+                </ul>
+                <div class="price-range">
+                    <label for="">Price</label>
+                    <input type="range" min="0" step="1" max="80" value="80" class="price-value">
+                    <output>Value : 
+                        <span class="filter-max-price dollar">80</span>
+                    </output>
+                </div>
+            </form>
+        </aside>
+        <div class="cards"></div>
+    </section>
+    <section class="cart-section hidden darken">
+        <button class="close">
+            <img src="./img/svg/xmark-solid.svg">
+        </button>
+        <h2>Your Bag</h2>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+            <p class="total">Total : <span class="total-sum dollar"></span></p>
+            <button class="checkout">Chekout</button>
+        </div>
+    </section>
+</body>
+</html>

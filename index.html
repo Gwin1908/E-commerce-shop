@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="https://kit.fontawesome.com/a090093f4c.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="./script/script.js"></script>
+    <title>Home</title>
+</head>
+<body class="index">
+    <div class="background-img"></div>
+    <header class="header">
+        <nav class="nav-index">
+            <a href="./index.html">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./about.html">About</a>
+        </nav>
+        <a class="logo-index" href="./index.html">comfy</a>
+        <div class="cart-container">
+            <button class="cart-index cart-icon">
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                <div class="number-of-items">5</div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="title-index">
+            <h1>Rest, Relax, Unwind</h1>
+            <p>Embrace your choices - we do</p>
+            <a href="./products.html">
+                <button>Show now</button>           
+            </a>
+        </section>
+        <section class="featured">
+            <h3>Featured</h3>
+            <div class="featured-cards"></div>
+            <a href="./products.html" class="all-products">
+                <button>All products</button>
+            </a>
+        </section>
+        <section class="cart-section hidden darken">
+            <button class="close">
+                <img src="./img/svg/xmark-solid.svg">
+            </button>
+            <h2>Your Bag</h2>
+            <div class="cart-items"></div>
+            <div class="cart-footer">
+                <p class="total">Total : <span class="total-sum dollar"></span></p>
+                <button class="checkout">Chekout</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
